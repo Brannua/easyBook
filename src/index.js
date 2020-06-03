@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { GlobalStyle } from './style';
+import './static/css/reset.css';
+import './static/css/iconfont.css';
 
 ReactDOM.render(
   <Fragment>
-    <GlobalStyle />
     <App />
   </Fragment>,
   document.getElementById('root')
