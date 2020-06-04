@@ -1,5 +1,5 @@
 /**
- * @desc 顶部导航栏组件
+ * @desc common-header-root-components
  */
 
 import React from 'react';

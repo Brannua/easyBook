@@ -25,3 +25,21 @@
   - 使用了redux-thunk中间件: 异步ajax放在actionCreator中
 
   - 使用了redux-saga中间件: 异步ajax放在sagas.js文件中
+
+- 性能优化
+
+  - 由于很多组件都使用connect方法和store链接了,那么只要store的数据一变化,就会触发这些组件的render重新执行导致重新渲染,这就有可能造成不必要的页面重新渲染,思路是利用shouldComponentUpdate进行判断,恰巧react团队考虑到了这一点,提供了一个集成了该功能的PureComponent,替换掉Component即可,注意PureComponent最好和immutable.js管理数据结合使用,避免坑
+
+    ```js
+      import { PureComponent } from 'React';
+    ```
+
+  - 在单页应用中,避免使用```<a>```标签进行页面跳转,因为页面会刷新,不符合单页应用的原则,使用'react-router-dom'库提供的API-Link代替a标签
+
+    ```js
+      import { Link } from 'react-router-dom';
+
+      <Link to='/'>
+        // ...
+      </Link>
+    ```

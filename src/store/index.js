@@ -1,5 +1,5 @@
 /**
- * @desc store
+ * @desc root-store
  */
 
 import { createStore, applyMiddleware, compose } from 'redux';

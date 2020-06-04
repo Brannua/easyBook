@@ -1,5 +1,5 @@
 /**
- * @desc headerReducer
+ * @desc common-headerReducer
  */
 
 // import { fromJS } from 'immutable';

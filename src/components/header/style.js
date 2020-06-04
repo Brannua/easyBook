@@ -1,3 +1,7 @@
+/**
+ * @desc common-header-styled-components
+ */
+
 import styled from 'styled-components';
 import logoPic from '../../static/img/logo.png';
 

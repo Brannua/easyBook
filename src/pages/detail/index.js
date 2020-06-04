@@ -1,3 +1,7 @@
+/**
+ * @desc deatil-root-components
+ */
+
 import React, { Component, Fragment } from 'react';
 
 class Detail extends Component {
